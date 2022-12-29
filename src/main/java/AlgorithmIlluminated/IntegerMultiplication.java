@@ -1,7 +1,8 @@
 package AlgorithmIlluminated;
+
 public class IntegerMultiplication {
 
-  public static void main(String[] args) {
+  public void execute() {
     String b = "5678";
     String a = "1234";
 
@@ -15,6 +16,6 @@ public class IntegerMultiplication {
       }
       sum += (int) (row * Math.pow(10, cnt));
     }
-    System.out.println("compute = " + sum);
+    System.out.println("compute for integer multiplication = " + sum);
   }
 }
