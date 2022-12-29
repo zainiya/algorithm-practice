@@ -3,3 +3,4 @@
 /.gradle/
 /gradlew.bat
 /settings.gradle
+*.lock
