@@ -1,5 +1,6 @@
 import AlgorithmIlluminated.IntegerMultiplication;
 import AlgorithmIlluminated.KaratsubaAlgorithm;
+import AlgorithmIlluminated.SortingAlgorithms;
 
 public class test {
 
@@ -8,5 +9,7 @@ public class test {
     intMult.execute();
     KaratsubaAlgorithm multiplication = new KaratsubaAlgorithm();
     multiplication.execute();
+    SortingAlgorithms sort = new SortingAlgorithms();
+    sort.execute();
   }
 }

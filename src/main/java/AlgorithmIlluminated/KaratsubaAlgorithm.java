@@ -3,22 +3,23 @@ package AlgorithmIlluminated;
 public class KaratsubaAlgorithm {
 
   public void execute() {
-    String xStr = "5678";
-    String yStr = "1234";
     int x = 5678;
     int y = 1234;
     System.out.println("Karatsuba Multiplication:");
-    System.out.println("compute for base concept = " + baseConcept(xStr, yStr));
+    System.out.println("compute for base concept = " + baseConcept(x, y));
     System.out.println("compute multiplication using recursive call = " + recIntMult(x, y));
     System.out.println("compute multiplication using Karatsuba algorithm = " + karatsuba(x, y));
   }
 
-  private int baseConcept(String x, String y) {
-    int a = Integer.parseInt(x.substring(0, (x.length() / 2)));
-    int b = Integer.parseInt(x.substring(x.length() / 2));
-    int c = Integer.parseInt(y.substring(0, (y.length() / 2)));
-    int d = Integer.parseInt(y.substring(y.length() / 2));
-    int n = x.length();
+  private int baseConcept(int x, int y) {
+    String xStr = Integer.toString(x);
+    String yStr = Integer.toString(y);
+
+    int a = Integer.parseInt(xStr.substring(0, (xStr.length() / 2)));
+    int b = Integer.parseInt(xStr.substring(xStr.length() / 2));
+    int c = Integer.parseInt(yStr.substring(0, (yStr.length() / 2)));
+    int d = Integer.parseInt(yStr.substring(yStr.length() / 2));
+    int n = xStr.length();
     //    Step 1: compute a.c
     int ac = a * c;
     //    Step 2: compute b.d
